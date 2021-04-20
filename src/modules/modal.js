@@ -10,10 +10,10 @@ const toggleModal = () => {
         });
     });
 
-    modal.addEventListener('click', e => {
+    document.addEventListener('click', e => {
         const target = e.target;
         console.log(target);
-        if (target.closest('#close')) {
+        if (target.closest('#close') || target.closest('#modal-overlay')) {
             modalOverlay.style.display = 'none';
             modal.style.display = 'none';
         }

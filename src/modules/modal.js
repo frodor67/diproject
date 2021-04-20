@@ -1,6 +1,3 @@
-/* eslint-disable strict */
-'use strict';
-
 const toggleModal = () => {
     const modal = document.querySelector('.modal-callback'),
         modalOverlay = document.querySelector('.modal-overlay'),
@@ -23,25 +20,5 @@ const toggleModal = () => {
     });
 };
 
-toggleModal();
 
-const toScroll = () => {
-
-    const anchors = document.querySelectorAll('.scroll-to');
-
-    for (const anchor of anchors) {
-        anchor.addEventListener('click', e => {
-            e.preventDefault();
-
-            const sectionID = anchor.getAttribute('href');
-
-            document.querySelector(sectionID).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        });
-    }
-};
-
-toScroll();
-
+export default toggleModal;

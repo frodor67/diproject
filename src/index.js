@@ -5,6 +5,7 @@
 import toggleModal from './modules/modal';
 import toScroll from './modules/toScroll';
 import topSlider from './modules/topSlider';
+import accordeon from './modules/accordeon';
 //import sliderCarousel from './modules/sliderCarousel';
 
 //Модальное окно
@@ -13,5 +14,5 @@ toggleModal();
 toScroll();
 //Первый слайдер
 topSlider();
-
-//sliderCarousel();
+//аккордеон
+accordeon();

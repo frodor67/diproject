@@ -11,6 +11,7 @@ body {
 	overflow-x: hidden;
 	font-family: "Open Sans", sans-serif;
 }
+
 .main-wrapper {
 	min-height: 100%;
 	height: auto !important;
@@ -852,7 +853,7 @@ hr.white {
 	overflow: hidden;
 	height: 450px;
 }
-.active {
+.top-slider__active {
 	display: block !important;
 }
 .top-slider .item {
@@ -974,11 +975,21 @@ video#video_background {
 /* end top slider */
 
 /************************* accordeon **************************/
+.accordeon-span {
+	display: block;
+	padding: 15px;
+}
 .accordeon .element-content {
-	display: none;
-	padding: 20px;
+	position: relative;
+	max-height: 0;
+	display: block;
+	overflow: hidden;
 	font-size: 13px;
 	color: #888885;
+	-webkit-transition: max-height 800ms ease-out;
+	-moz-transition: max-height 800ms ease-out;
+	-o-transition: max-height 800ms ease-out;
+	transition: max-height 0.8s;
 }
 .accordeon .element {
 	margin-bottom: 6px;
@@ -1025,9 +1036,9 @@ video#video_background {
 .accordeon .element.active .title:before {
 	background: url(../images/minus.png) 50% 50% no-repeat #333;
 }
-.accordeon > div:first-of-type .element-content {
+/* .accordeon>div:first-of-type .element-content {
 	display: block;
-}
+} */
 .accordeon .element .title:hover:before {
 	background-color: #333;
 }

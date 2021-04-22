@@ -212,7 +212,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-6 col-md-4 ">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Замена электросчетчика"></a>
@@ -721,7 +721,23 @@
     <![endif]-->
 
 	<!-- <script src="scripts/script.js"></script> -->
-	<script src="/dist/main.js"></script>
+	<script src="dist/main.js"></script>
+	<script src="dist/plugins/carousel.js"></script>
+	<!-- <script src="src/modules/carousel.js"></script> -->
+	<script>
+
+		const carousel = new SliderCarousel({
+			main: '.services-elements',
+			wrap: '.services-carousel',
+			next: '.arrow-right',
+			prev: '.arrow-left',
+			slidesToShow: 3,
+			infinity: true
+		});
+
+		carousel.init();
+
+	</script>
 </body>
 
 </html>

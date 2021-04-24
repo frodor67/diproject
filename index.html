@@ -475,11 +475,11 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<div class="accordeon">
-							<div class="element ">
+							<div class="element active">
 								<div class="title">
 									Как построена ваша работа?
 								</div>
-								<div class="element-content">
+								<div class="element-content" style="max-height: 110px;">
 									<span class="accordeon-span">С другой стороны дальнейшее развитие различных форм деятельности обеспечивает
 									широкому кругу (специалистов) участие
 									в формировании систем массового участия. Значимость этих проблем настолько очевидна,
@@ -628,7 +628,7 @@
 		<div class="title-h2">Мы перезвоним через 5 минут!</div>
 		<br />
 		<div class="rf">
-			<form action="" name="form-callback">
+			<form action="" name="form-callback" id="myForm">
 				<div class="form-group">
 					<input type="text" name="fio" class="form-control" placeholder="Ваше имя" />
 				</div>
@@ -638,7 +638,7 @@
 				</div>
 				<p><span class="red">*</span> <span class="f12">- поля, обязательные для заполнения</span></p>
 				<div>
-					<button type="submit" class="button btn feedback">отправить</button>
+					<button id="myBtn" type="submit" class="button btn feedback">отправить</button>
 				</div>
 			</form>
 		</div>
@@ -723,7 +723,7 @@
 	<!-- <script src="scripts/script.js"></script> -->
 	<script src="dist/main.js"></script>
 	<script src="dist/plugins/carousel.js"></script>
-	<!-- <script src="src/modules/mobilemenu.js"></script> -->
+	<!-- <script src="src/modules/handler.js"></script> -->
 	<!-- <script src="src/modules/carousel.js"></script> -->
 	<script>
 

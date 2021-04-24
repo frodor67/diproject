@@ -9,7 +9,7 @@ import accordeon from './modules/accordeon';
 import scroll from './modules/scroll';
 import handler from './modules/handler';
 import sendForm from './modules/sendform';
-//import sliderCarousel from './modules/sliderCarousel';
+import mobileMenu from './modules/mobilemenu';
 
 //Модальное окно
 toggleModal();
@@ -23,5 +23,9 @@ accordeon();
 scroll();
 //События
 handler();
-
+//Отпрвака данных
 sendForm();
+//Мобльное меню
+mobileMenu();
+
+
